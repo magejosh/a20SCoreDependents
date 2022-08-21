@@ -1,0 +1,5 @@
+<configs>
+  
+		<!-- <set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='FireManagement']/property[@name='BuffOnFire']/@value">guppyBurning</set>  -->
+
+</configs>

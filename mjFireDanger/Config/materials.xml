@@ -1,0 +1,75 @@
+<configs>
+
+<append xpath="/materials/material[@id='Mguppyoil']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyBlack" /> <!-- Fire particle to use -->
+				<!-- Alternative included particles -->
+				<!--
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyBlack" />
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyBlue" />
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyGreen" />
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyWhite" />
+				-->
+
+</append>
+
+<append xpath="/materials/material[@id='MbarbedFence']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyWhite" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='MtrapSpikesWood']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyWhite" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='Morganic']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyGreen" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='Mplants']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyGreen" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='Mmushrooms']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyBlue" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='Mcactus']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyBlue" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='MDynamite']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyBlue" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='MFuelBarrelMetal']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyGreen" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='MFuelBarrelPolymer']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyGreen" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='Mtrash']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyBlack" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='Mleather']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyBlack" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='MCardboardLoot']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyGreen" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='Mfurniture']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyBlack" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='Mplastics']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyGreen" /> <!-- Fire particle to use -->
+</append>
+
+<append xpath="/materials/material[@id='MclothStable_shapes']">
+				<property name="FireParticle" value="#@modfolder(Guppycur's Fire Mod):Resources/guppyFireParticleColors.unity3d?gupBeavis05-HeavyWhite" /> <!-- Fire particle to use -->
+</append>
+
+</configs>

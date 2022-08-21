@@ -1,0 +1,66 @@
+<configs>
+
+<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="CheckFireProximity, SCore" range="5"  />
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="CoreTemp" operation="add" value="10">
+				<requirement name="!HasBuff" buff="god"/>
+				<!-- <requirement name="CVarCompare" cvar="_coretemp" operation="GT" value="10"/> -->
+				<requirement name="CVarCompare" cvar="_coretemp" operation="LTE" value="10"/>
+				<requirement name="CVarCompare" cvar="_closeFires" operation="LTE" value="5"/>
+				<requirement name="CVarCompare" cvar="_closeFires" operation="GT" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="CoreTemp" operation="add" value="10">
+				<requirement name="!HasBuff" buff="god"/>
+				<requirement name="CVarCompare" cvar="_coretemp" operation="GTE" value="10"/>
+				<requirement name="CVarCompare" cvar="_coretemp" operation="LT" value="20"/>
+				<requirement name="CVarCompare" cvar="_closeFires" operation="LTE" value="5"/>
+				<requirement name="CVarCompare" cvar="_closeFires" operation="GT" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="CoreTemp" operation="add" value="10">
+				<requirement name="!HasBuff" buff="god"/>
+				<requirement name="CVarCompare" cvar="_coretemp" operation="GTE" value="20"/>
+				<!-- <requirement name="CVarCompare" cvar="_coretemp" operation="LTE" value="30"/> -->
+				<requirement name="CVarCompare" cvar="_closeFires" operation="LTE" value="5"/>
+				<requirement name="CVarCompare" cvar="_closeFires" operation="GT" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="CoreTemp" operation="add" value="30">
+				<requirement name="!HasBuff" buff="god"/>
+				<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="LT" value="3"/>
+				<!-- <requirement name="CVarCompare" cvar="_coretemp" operation="LTE" value="30"/> -->
+				<requirement name="CVarCompare" cvar="_closeFires" operation="GTE" value="6"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="@_closeFires">
+				<requirement name="!HasBuff" buff="god"/>
+				<!-- <requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="LT" value="3"/> -->
+				<!-- <requirement name="CVarCompare" cvar="_coretemp" operation="GTE" value="30"/> -->
+				<requirement name="CVarCompare" cvar="_closeFires" operation="GTE" value="20"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="guppyBurning">
+				<requirement name="!HasBuff" buff="god"/>
+				<!-- <requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="LT" value="3"/> -->
+				<requirement name="CVarCompare" cvar="_coretemp" operation="GTE" value="30"/>
+				<requirement name="CVarCompare" cvar="_closeFires" operation="GTE" value="9"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffDiein30Fire">
+				<requirement name="!HasBuff" buff="god"/>
+				<!-- <requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="LT" value="3"/> -->
+				<requirement name="CVarCompare" cvar="_coretemp" operation="GTE" value="30"/>
+				<requirement name="CVarCompare" cvar="_closeFires" operation="GTE" value="13"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="CoreTemp" operation="add" value="-10">
+				<requirement name="!HasBuff" buff="god"/>
+				<requirement name="CVarCompare" cvar="_coretemp" operation="GTE" value="10"/>
+				<!-- <requirement name="CVarCompare" cvar="_coretemp" operation="LT" value="30"/> -->
+				<requirement name="CVarCompare" cvar="_closeFires" operation="LTE" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="CoreTemp" operation="add" value="-30">
+				<requirement name="!HasBuff" buff="god"/>
+				<!-- <requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="LT" value="3"/> -->
+				<requirement name="CVarCompare" cvar="_coretemp" operation="GTE" value="30"/>
+				<requirement name="CVarCompare" cvar="_closeFires" operation="LTE" value="5"/>
+			</triggered_effect>
+		</effect_group>
+</append>
+
+</configs>

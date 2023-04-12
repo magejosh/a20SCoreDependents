@@ -713,7 +713,7 @@
 				<requirement name="!HasBuff" buff="buffFireProxTracker"/>
 			</triggered_effect>
 		</effect_group>
-		<effect_group name="FireProxLogging">
+		<!-- <effect_group name="FireProxLogging">
 			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="_closeFires"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="_close6mFires"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="_nearFires"/>
@@ -721,7 +721,7 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="_near12mFires"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="_farFires"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="_far20mFires"/>
-		</effect_group>
+		</effect_group> -->
 </append>
 
 <append xpath="/buffs/buff[@name='zombieBuffStatusCheck01']">
